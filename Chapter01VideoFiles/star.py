@@ -1,0 +1,16 @@
+import turtle
+turtle.penup()
+turtle.setpos(0, 300)
+turtle.pendown()
+turtle.pensize(5)
+turtle.setpos(-76, 55)
+turtle.setpos(-320, 55)
+turtle.setpos(-120, -60)
+turtle.setpos(-200, -300)
+turtle.setpos(0, -160)
+turtle.setpos(200, -300)
+turtle.setpos(120, -60)
+turtle.setpos(320, 55)
+turtle.setpos(76, 55)
+turtle.setpos(0, 300)
+
