@@ -1,0 +1,15 @@
+Elementary 1
+404
+20
+Elementary 2
+753
+20
+Elementary 3
+158
+40
+Elementary 4
+31
+60
+Elementary 5
+244
+40
