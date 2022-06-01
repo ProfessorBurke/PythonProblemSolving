@@ -1,0 +1,9 @@
+rectangle
+0
+0
+100
+50
+circle
+0
+0
+50
