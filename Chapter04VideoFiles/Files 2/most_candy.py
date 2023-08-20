@@ -40,7 +40,10 @@ if os.path.isfile(filename):
         # Read the start of the next record or eof.
         name = halloween_file.readline().strip()
 
-    print("{} got the most candy: {} {}.".format(most_name, largest_amount, most_candy))
+    # Display the person who got the most candy, as long as the
+    # file wasn't empty.
+    if largest_amount != -1:
+        print("{} got the most candy: {} {}.".format(most_name, largest_amount, most_candy))
     halloween_file.close()
 else:
     print("Can't find {}.  Check the spelling and location.".format(filename))
