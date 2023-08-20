@@ -1,7 +1,12 @@
 """
     Ask the user for a file name, open the file, and read
-    three ice cream flavors from the file and tell them to
-    the user.
+    records of three values each:
+    name
+    type of candy
+    amount
+    Display each record to the console.
+    Find the name and type of candy with the largest amount
+    and display to the console.
 """
 # Import os.path to check if the file exists
 # and io to annotate the file reference variable.
