@@ -1,7 +1,8 @@
 """
     Ask the user for a file name, open the file, and read
-    three ice cream flavors from the file and tell them to
-    the user.
+    all the flavors from the file and display them to
+    the console.
+    Flavors are one to a line in the file.
 """
 # Import os.path to check if the file exists
 # and io to annotate the file reference variable.
