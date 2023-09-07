@@ -1,44 +1,26 @@
 """
-    An inventory piece of an adventure game.
+    Allow the player to display and edit an inventory.
 """
-from typing import List
 
-def show_items(items: List[str], heading: str) -> None:
-    """Display the items."""
-    item: str
-    print(heading)
-    if len(items) > 0:
-        for item in items:
-            print("\t{}".format(item))
-    else:
-        print("\tNothing.")
+# Annotate and initialize variables.
+inventory: list[str] = ["key", "Awful Awful", "Python book"]
+index: int
+item: str
 
-def pick_up(inv: List[str], items: List[str]) -> None:
-    """Allow the user to pick up one of the available
-       items.  Lists passed might be modified."""
-    choice: str
-    show_items(items, "You see: ")
-    choice = input("What do you want to pick up? ")
-    if choice in items:
-        items.remove(choice)
-        inv.append(choice)
-    else:
-        print("I don't see that here.")
-    
-def main() -> None:
-    inventory: List[str] = []
-    items: List[str] = ["a well-read Python textbook",
-                        "gum",
-                        "two nickels",
-                        "one ring to rule them all"]
-    # Show the user their inventory.
-    show_items(inventory, "You have: ")
-    # Allow the user to pick up an item.
-    pick_up(inventory, items)
-    # Show the user their inventory.
-    show_items(inventory, "You have: ")
+# Show the player the inventory.
+print("You have: ")
+print(inventory)
 
-main()
-    
-    
-    
+# Find out what the player wants to replace.
+print("You have {} items.".format(len(inventory)))
+index = int(input("What is the nubmer of the item you want to replace? "))
+index -= 1
+item = input("What do you want to replace it with? ")
+
+# Replace the item.
+if index >= 0 and index < len(inventory):
+    inventory[index] = item
+
+# Show the player the inventory.
+print("You have: ")
+print(inventory)
