@@ -11,7 +11,7 @@ MONTHS: list[str] = ["January", "February", "March", "April",
                      "October", "November", "December"]
 
 # Annotate and initialize the list of borrowing statistics.
-books = list[list[int]]
+books: list[list[int]]
 books = [[300, 305, 290, 274, 200, 150, 210, 220, 204, 246, 250, 201],
          [302, 299, 100, 0, 25, 50, 75, 80, 52, 74, 86, 102],
          [115, 90, 87, 92, 120, 117, 99, 115, 123, 150, 182, 178],
