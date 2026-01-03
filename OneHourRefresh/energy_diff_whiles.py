@@ -22,7 +22,7 @@ while country_name != "done":
     year2 = int(input("What is the second year? "))
     while year2 < 1965 or year2 > 2024:
         print("That is not a valid year.")
-        year1 = int(input("What is the second year? "))
+        year2 = int(input("What is the second year? "))
 
     # Obtain the energy usage data for the two years.
     energy1 = float(input("What is the energy usage for the first year? "))
@@ -40,3 +40,4 @@ while country_name != "done":
         print(f"Energy usage between {year1:d} and {year2:d} did not change.")
     country_name = input("Please enter the country name or 'done' to quit: ")
     
+
